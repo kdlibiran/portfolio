@@ -1,9 +1,9 @@
-import './globals.css'
-
-export const metadata = {
-  title: 'Kyle Libiran Portfolio',
-  description: 'Kyle Libiran Portfolio',
-}
+import '@/styles/globals.css'
+import Navbar from '@/components/Navbar'
+import { Inter } from 'next/font/google'
+import { cn } from '@/lib/utils'
+import Providers from '@/components/Providers'
+const inter = Inter({ subsets: ['latin'] })
 
 export default function RootLayout({
   children,
@@ -11,8 +11,13 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="en" className={cn('text-slate-900 antialiased font-mono', inter.className)}>
+      <body className='h-screen bg-slate-50 dark:bg-slate-900 antialiased overflow-hidden'>
+        <Providers>
+            { /* @ts-expect-error: Server Component */}
+            <Navbar />
+        </Providers>
+      </body>
     </html>
   )
 }
