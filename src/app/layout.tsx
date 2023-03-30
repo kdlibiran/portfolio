@@ -13,6 +13,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={cn('text-slate-900 antialiased font-mono', inter.className)}>
       <body className='h-screen bg-slate-50 dark:bg-slate-900 antialiased overflow-hidden'>
+        <h1>Hello World</h1>
         <Providers>
             { /* @ts-expect-error: Server Component */}
             <Navbar />

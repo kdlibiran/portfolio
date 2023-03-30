@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Kyle Libiran | Software Engineer',
-  description: 'Free & open-source text similarity API',
+  description: 'Portfolio',
 }
 
 export default function Home() {
