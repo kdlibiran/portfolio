@@ -1,8 +1,7 @@
 import type { Metadata } from 'next'
 import Code from '@/components/Code'
 import LargeHeading from '@/components/ui/LargeHeading'
-import { about_me } from '@/helpers/strings'
-
+import AboutMeTabs from '@/components/AboutMeTabs'
 
 export const metadata: Metadata = {
   title: 'Kyle Libiran',
@@ -17,8 +16,8 @@ export default function Main() {
           <Code animated show={true} language={'javascript'} code={'return("Welcome To My Website")'}/>
         </LargeHeading>
       </div>
-      <div className='flex shrink-0 flex-col justify-center items-center m-h-screen h-screen snap-start'>           
-          <Code animated show={true} language={'python'} code={about_me}/>
+      <div className='flex shrink-0 flex-col justify-center items-center m-h-screen h-screen snap-start gap-6'>  
+          <AboutMeTabs />
       </div>
     </div>
   )
