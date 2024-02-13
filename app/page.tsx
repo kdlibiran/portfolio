@@ -12,13 +12,13 @@ export default function Home() {
         </div>
       </nav>
       <div className="center w-[100vw] h-[90vh] top-0 flex flex-1">
-        <div className="flex-initial flex flex-col h-full pt-32 ml-16 w-1/3">
+        <div className="flex-initial flex flex-col h-full justify-center ml-16 w-1/2">
           <h1 className="text-6xl">Hello, I'm Kyle David Libiran</h1>
           <p className="text-2xl">
             I'm a software engineer and a web developer
           </p>
         </div>
-        <div className="flex-initial mt-48 items-center flex-col w-2/3 md:flex hidden ml-16">
+        <div className="flex-initial items-cente justify-center flex-col w-2/3 md:flex hidden ml-4">
           <Kbd />
         </div>
       </div>
