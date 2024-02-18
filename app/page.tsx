@@ -62,7 +62,7 @@ export default function Home() {
             <div className="-mt-5 flex flex-row justify-center space-x-3">
               <Image
                 src="/static/images/up.png"
-                alt="UP"
+                alt="UP Logo"
                 width={200}
                 height={200}
                 className=" rounded-full"
