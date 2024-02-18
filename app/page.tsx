@@ -61,7 +61,7 @@ export default function Home() {
             <h1 className=" text-3xl">Education</h1>
             <div className="-mt-5 flex flex-row justify-center space-x-3">
               <Image
-                src="/static/images/up.png"
+                src="/static/images/UP-logo.png"
                 alt="UP Logo"
                 width={200}
                 height={200}
