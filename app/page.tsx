@@ -11,6 +11,7 @@ import {
 } from "@iconscout/react-unicons";
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -18,12 +19,16 @@ export default function Home() {
       <nav className="fixed flex w-[100vw] flex-1 justify-between bg-white p-6 shadow-md">
         <p className="text-l">Kyle Libiran</p>
         <div className="hidden space-x-5 md:flex">
-          <a href="/about">About</a>
+          <Link href="#home">Home </Link>
+          <Link href="#about-me">About</Link>
           <a href="/projects">Projects</a>
           <a href="/contact">Contact</a>
         </div>
       </nav>
-      <div className="center top-0 flex h-[100vh] flex-1 bg-gradient-to-b from-white to-stone-200">
+      <div
+        id="home"
+        className="center top-0 flex h-[100vh] flex-1 bg-gradient-to-b from-white to-stone-200"
+      >
         <div className="ml-16 flex h-full w-1/2 flex-initial flex-col justify-center">
           <h1 className="text-6xl">Hello, I'm Kyle David Libiran</h1>
           <p className="mt-4 text-2xl">
@@ -46,7 +51,10 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="center flex h-[100vh] flex-1 flex-col items-center bg-stone-200">
+      <div
+        id="about-me"
+        className="center flex h-[100vh] flex-1 flex-col items-center bg-stone-200"
+      >
         <div className="mt-36 text-6xl">About Me</div>
         <div className="mt-0 grid w-full grid-cols-2">
           <div className="col-span-1 grid grid-rows-3 items-center text-center">
@@ -63,17 +71,16 @@ export default function Home() {
             <div>
               <p>University of the Philippines</p>
               <p>Bachelor of Science in Computer Science</p>
-              <p>2020 - Present</p>
+              <p>2021 - Present</p>
             </div>
           </div>
           <div className="col-span-1 grid grid-rows-3 items-center text-center">
             <h1 className="text-3xl"> Skills </h1>
-            <div className="flex flex-row justify-center space-x-3">
-              <UilJavaScript size="40" />
-              <UilReact size="40" />
-              <UilHtml5 size="40" />
-              <UilHtml3 size="40" />
-              <UilDatabase size="40" />
+            <div className="flex flex-row justify-center space-x-4">
+              <UilJavaScript size="60" />
+              <UilReact size="60" />
+              <UilHtml5 size="60" />
+              <UilHtml3 size="60" />
             </div>
           </div>
         </div>
