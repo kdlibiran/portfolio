@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer base {
-  * {
-    @apply font-mono;
-  }
+    * {
+        @apply font-mono;
+    }
 }
