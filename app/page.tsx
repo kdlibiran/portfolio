@@ -17,6 +17,7 @@ import {
 } from "@iconscout/react-unicons";
 import Image from "next/image";
 import Link from "next/link";
+import Kbd from "@/components/kbd";
 
 export default function Home() {
   useEffect(() => {
@@ -57,11 +58,39 @@ export default function Home() {
       },
       y: 100,
     });
-  }, []);
+    //enter and leave of kbd
+    gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: "#welcome2",
+          start: "top top",
+          end: "bottom top",
+          scrub: 1,
+        },
+      })
+      .to("#kbd", { x: 0 })
+      .to("#kbd", { x: -650 });
+    gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: "#hero",
+          start: "top top",
+          end: "bottom top",
+          scrub: 1,
+        },
+      })
+      .to("#kbd", { x: 0 });
+  });
 
   return (
     <main>
       <div className="snap-y snap-mandatory">
+        <div
+          id="kbd"
+          className="fixed -right-[1000px] flex h-full w-full flex-col justify-center"
+        >
+          <Kbd />
+        </div>
         <nav
           id="nav"
           className="fixed -top-[100px] flex w-[100vw] flex-1 justify-between bg-white p-6 shadow-md"
@@ -119,7 +148,7 @@ export default function Home() {
           className="center flex h-[100vh] flex-1 snap-center flex-col items-center bg-stone-200"
         >
           <div className="mt-36 text-6xl">About Me</div>
-          <div className="grid w-full grid-cols-2">
+          <div className="grid w-[80vw] grid-cols-2">
             <div className="col-span-1 grid grid-rows-3 items-center text-center">
               <h1 className=" text-3xl">Education</h1>
               <div className="-mt-5 flex flex-row justify-center space-x-3">
@@ -139,7 +168,7 @@ export default function Home() {
             </div>
             <div className="col-span-1 grid grid-rows-3 items-center text-center">
               <h1 className="text-3xl"> Skills </h1>
-              <div className="row-span-2 -mt-16 grid grid-cols-4 place-items-center space-y-5">
+              <div className="row-span-2 -mt-16 grid grid-cols-3 place-items-center space-y-3">
                 <Image
                   src="/static/logos/python.svg"
                   alt="python"
