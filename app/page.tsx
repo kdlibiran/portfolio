@@ -69,7 +69,7 @@ export default function Home() {
         },
       })
       .to("#kbd", { x: 0 })
-      .to("#kbd", { x: -650 });
+      .to("#kbd", { x: -850 });
     gsap
       .timeline({
         scrollTrigger: {
@@ -87,7 +87,7 @@ export default function Home() {
       <div className="snap-y snap-mandatory">
         <div
           id="kbd"
-          className="fixed -right-[1000px] flex h-full w-full flex-col justify-center"
+          className="fixed -right-[1200px] flex h-full w-full flex-col justify-center"
         >
           <Kbd />
         </div>
