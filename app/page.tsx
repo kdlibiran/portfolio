@@ -33,22 +33,6 @@ export default function Home() {
     })();
   }, []);
 
-  const herobtn = document.getElementById("#herobtn");
-  const aboutbtn = document.getElementById("#aboutbtn");
-  gsap.registerPlugin(ScrollToPlugin);
-  herobtn?.addEventListener("click", () => {
-    gsap.to(window, {
-      duration: 1,
-      scrollTo: { y: "#hero" },
-    });
-  });
-  aboutbtn?.addEventListener("click", () => {
-    gsap.to(window, {
-      duration: 1,
-      scrollTo: { y: "#about-me" },
-    });
-  });
-
   return (
     <main ref={comp}>
       <AnimatePresence mode="wait">
