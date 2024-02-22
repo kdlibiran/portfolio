@@ -10,7 +10,7 @@ export default function Navbar() {
     >
       <nav
         id="nav"
-        className="fixed top-0 flex w-[100vw] flex-1 justify-between bg-white p-6 shadow-md"
+        className="fixed top-0 z-[99] flex w-[100vw] flex-1 justify-between bg-white p-6 shadow-md"
       >
         <p className="text-l">Kyle Libiran</p>
         <div className="hidden space-x-5 md:flex">
