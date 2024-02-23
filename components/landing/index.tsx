@@ -13,10 +13,10 @@ export default function LandingPage() {
       className="center top-0 flex h-[100vh] flex-1 snap-center bg-gradient-to-b from-white to-stone-200"
     >
       <div className="ml-16 flex h-full w-1/2 flex-initial flex-col justify-center">
-        <h1 className="text-6xl">Hello, I'm Kyle David Libiran</h1>
-        <p className="mt-4 text-2xl">
-          I am a computer science student from the University of the Philippines
-          - Diliman{" "}
+        <h1 className="text-4xl sm:text-6xl">Hello, I'm Kyle David Libiran</h1>
+        <p className="mt-4 text-xl sm:text-2xl">
+          I am a full-stack web developer who loves to learn and build new
+          things.
         </p>
         <div className="mt-4 flex flex-row space-x-3">
           <a href="https://github.com/kdlibiran">
