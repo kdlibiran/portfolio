@@ -16,7 +16,7 @@ export default function Preloader() {
       variants={slideUp}
       initial="initial"
       exit="exit"
-      className=" z-100 flex h-[100vh] w-[100vw] flex-1 items-center justify-center bg-black text-white"
+      className=" z-100 flex h-[100vh] w-[100vw] flex-1 items-center justify-center bg-black p-10 text-white"
     >
       <h1 className="text-center text-5xl">{text}</h1>
     </motion.div>

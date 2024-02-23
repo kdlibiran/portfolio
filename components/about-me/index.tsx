@@ -41,10 +41,10 @@ export default function AboutMePage() {
 
   return (
     <div id="about-me" className=" h-[200vh]  overflow-hidden bg-stone-200">
-      <div className="h-[50vh]">
+      <div className="h-[25vh] sm:h-[50vh]">
         <div
           ref={slider}
-          className="relative z-[98] mt-16 whitespace-nowrap text-[100px] sm:text-[230px]"
+          className="relative z-[0] mt-16 whitespace-nowrap text-[100px] sm:text-[230px]"
         >
           <p ref={firstTitleRef} className="absolute pr-[100px] sm:pr-[200px]">
             About the Developer
@@ -57,49 +57,49 @@ export default function AboutMePage() {
           </p>
         </div>
       </div>
-      <div className="flex w-[100vw] flex-row items-center justify-between pl-52 pr-52">
-        <div className="flex flex-col justify-center">
-          <h1 className="text-6xl">Education</h1>
+      <div className="flex w-[100vw] flex-col items-center justify-between sm:flex-row sm:pl-52 sm:pr-52">
+        <div className="flex flex-col justify-center sm:flex-col">
+          <h1 className="text-3xl sm:text-6xl">Education</h1>
         </div>
-        <div className="flex flex-col items-center justify-center text-center">
+        <div className="flex flex-col items-center justify-center pl-10 pr-10 text-center sm:p-0">
           <Image
             src="/static/images/UP-logo.png"
             alt="education"
-            width={250}
-            height={250}
+            width={200}
+            height={200}
           />
           <p> University of Philippines - Diliman</p>
           <p> Bachelor of Science in Computer Science</p>
           <p> 2021 - 2025</p>
         </div>
       </div>
-      <div className="mt-44 flex w-[100vw] flex-row items-center justify-between pl-52 pr-52">
-        <div className="flex flex-row justify-center">
+      <div className="mt-20 flex w-[100vw] flex-col items-center justify-between sm:mt-44 sm:flex-row sm:pl-52 sm:pr-52">
+        <div className="flex flex-col-reverse items-center justify-center sm:flex-col">
+          <h1 className="text-3xl sm:text-6xl">Languages</h1>
+        </div>
+        <div className="mt-10 flex flex-row justify-center sm:mt-0">
           <Image
             src="/static/logos/python.svg"
             alt="python"
-            width={60}
-            height={60}
+            width={40}
+            height={40}
           />
           <Image
             src="/static/logos/javascript.svg"
             alt="javascript"
-            width={60}
-            height={60}
+            width={40}
+            height={40}
           />
           <Image
             src="/static/logos/typescript.svg"
             alt="typescript"
-            width={60}
-            height={60}
+            width={40}
+            height={40}
           />
 
-          <UilHtml5 size="60" />
-          <UilHtml3 size="60" />
-          <Image src="/static/logos/c.svg" alt="c" width={60} height={60} />
-        </div>
-        <div className="flex flex-col items-center justify-center">
-          <h1 className="text-6xl">Languages</h1>
+          <UilHtml5 size="40" />
+          <UilHtml3 size="40" />
+          <Image src="/static/logos/c.svg" alt="c" width={40} height={40} />
         </div>
       </div>
     </div>

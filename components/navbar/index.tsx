@@ -6,11 +6,11 @@ export default function Navbar() {
       initial={{ y: "-100%" }}
       animate={{ y: "100%" }}
       exit={{ y: 0 }}
-      className="fixed"
+      className="fixed z-[1]"
     >
       <nav
         id="nav"
-        className="fixed top-0 z-[99] flex w-[100vw] flex-1 justify-between bg-white p-6 shadow-md"
+        className="fixed top-0 z-[1] flex w-[100vw] flex-1 justify-between bg-white p-6 shadow-md"
       >
         <p className="text-l">Kyle Libiran</p>
         <div className="hidden space-x-5 md:flex">
