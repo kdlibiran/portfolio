@@ -44,12 +44,15 @@ export default function AboutMePage() {
       <div className="h-[50vh]">
         <div
           ref={slider}
-          className="relative z-[98] mt-16 whitespace-nowrap text-[230px]"
+          className="relative z-[98] mt-16 whitespace-nowrap text-[100px] sm:text-[230px]"
         >
-          <p ref={firstTitleRef} className="absolute pr-[200px]">
+          <p ref={firstTitleRef} className="absolute pr-[100px] sm:pr-[200px]">
             About the Developer
           </p>
-          <p ref={secondTitleRef} className="absolute left-[2901px] pr-[200px]">
+          <p
+            ref={secondTitleRef}
+            className="absolute left-[1275px] pr-[100px] sm:left-[2901px] sm:pr-[200px]"
+          >
             About the Developer
           </p>
         </div>
