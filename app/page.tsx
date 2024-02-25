@@ -5,6 +5,7 @@ import { AnimatePresence } from "framer-motion";
 import LandingPage from "@/components/landing";
 import Navbar from "@/components/navbar";
 import AboutMePage from "@/components/about-me";
+import ProjectsPage from "@/components/projects";
 
 export default function Home() {
   const comp = useRef(null);
@@ -27,6 +28,7 @@ export default function Home() {
       {!isLoading && <Navbar />}
       <LandingPage />
       <AboutMePage />
+      <ProjectsPage />
     </main>
   );
 }

@@ -3,7 +3,7 @@ import gsap from "gsap";
 import { useRef, useLayoutEffect } from "react";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import Image from "next/image";
-import { UilHtml3, UilHtml5 } from "@iconscout/react-unicons";
+import { UilHtml3, UilHtml5, UilReact } from "@iconscout/react-unicons";
 
 export default function AboutMePage() {
   const firstTitleRef = useRef(null);
@@ -100,6 +100,45 @@ export default function AboutMePage() {
           <UilHtml5 size="40" />
           <UilHtml3 size="40" />
           <Image src="/static/logos/c.svg" alt="c" width={40} height={40} />
+        </div>
+      </div>
+      <div className="mt-20 flex w-[100vw] flex-col items-center justify-between sm:mt-44 sm:flex-row sm:pl-52 sm:pr-52">
+        <div className="flex flex-col-reverse items-center justify-center sm:flex-col">
+          <h1 className="text-3xl sm:text-6xl">Technologies</h1>
+        </div>
+        <div className="mt-10 flex flex-row justify-center sm:mt-0">
+          <UilReact size="40" />
+          <Image
+            src="/static/logos/django.svg"
+            alt="django"
+            width={40}
+            height={40}
+          />
+          <Image
+            src="/static/logos/node.svg"
+            alt="node"
+            width={40}
+            height={40}
+          />
+          <Image
+            src="/static/logos/figma.svg"
+            alt="figma"
+            width={40}
+            height={40}
+          />
+          <Image src="/static/logos/git.svg" alt="git" width={40} height={40} />
+          <Image
+            src="/static/logos/tailwind-css.svg"
+            alt="tailwind css"
+            width={40}
+            height={40}
+          />
+          <Image
+            src="/static/logos/sql-file.svg"
+            alt="sql"
+            width={40}
+            height={40}
+          />
         </div>
       </div>
     </div>
