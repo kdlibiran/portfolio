@@ -46,7 +46,7 @@ export function Project({
             alt="thumbnail"
           />
         </CardItem>
-        <div className="mt-20 flex items-center justify-between">
+        <div className="mt-20 flex items-center justify-end">
           <CardItem
             translateZ={20}
             translateX={40}

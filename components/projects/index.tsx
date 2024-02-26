@@ -8,7 +8,7 @@ export default function ProjectsPage() {
     >
       <div className="mt-32 flex w-[100vw] flex-initial flex-col items-center">
         <h1 className="text-4xl sm:text-6xl">Projects</h1>
-        <div className="flex flex-1 flex-col gap-10 p-10 sm:flex-row sm:p-0">
+        <div className="flex flex-1 flex-col gap-x-10 p-10 sm:flex-row sm:p-0">
           <Project
             title="FreeWall"
             body="An open source social media apps where there are different walls and you can post anything on any wall anonymously."
