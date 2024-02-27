@@ -4,6 +4,7 @@ import { useRef, useLayoutEffect } from "react";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import Image from "next/image";
 import { UilHtml3, UilHtml5, UilReact } from "@iconscout/react-unicons";
+import Link from "next/link";
 
 export default function AboutMePage() {
   const firstTitleRef = useRef(null);
@@ -40,105 +41,46 @@ export default function AboutMePage() {
   };
 
   return (
-    <div id="about-me" className=" h-[200vh]  overflow-hidden bg-stone-200">
-      <div className="h-[25vh] sm:h-[50vh]">
+    <div
+      id="about-me"
+      className="flex h-[100vh] flex-col items-center justify-center bg-stone-200"
+    >
+      <div className="scroll-none hidden w-[90vw] flex-initial sm:flex sm:overflow-hidden">
         <div
           ref={slider}
-          className="relative z-[0] mt-16 whitespace-nowrap text-[100px] sm:text-[230px]"
+          className="z-[0] flex h-[60px] whitespace-nowrap text-6xl"
         >
-          <p ref={firstTitleRef} className="absolute pr-[100px] sm:pr-[200px]">
-            About the Developer
+          <p ref={firstTitleRef} className="pr-[50px]">
+            About the Developer - About the Developer - About the Developer -
           </p>
-          <p
-            ref={secondTitleRef}
-            className="absolute left-[1275px] pr-[100px] sm:left-[2901px] sm:pr-[200px]"
-          >
-            About the Developer
+          <p ref={secondTitleRef} className="left-[2461px] pr-[50px]">
+            About the Developer - About the Developer - About the Developer -
           </p>
         </div>
       </div>
-      <div className="flex w-[100vw] flex-col items-center justify-between sm:flex-row sm:pl-52 sm:pr-52">
-        <div className="flex flex-col justify-center sm:flex-col">
-          <h1 className="text-3xl sm:text-6xl">Education</h1>
+      <div className="flex w-[90vw] flex-initial flex-col sm:mt-10 sm:flex-row sm:justify-end">
+        <div className="flex flex-row justify-center sm:w-1/2">
+          <Image
+            src="/static/images/logo1.png"
+            alt="Picture of the author"
+            width={500}
+            height={500}
+          />
         </div>
-        <div className="flex flex-col items-center justify-center pl-10 pr-10 text-center sm:p-0">
-          <Image
-            src="/static/images/UP-logo.png"
-            alt="education"
-            width={200}
-            height={200}
-          />
-          <p> University of Philippines - Diliman</p>
-          <p> Bachelor of Science in Computer Science</p>
-          <p> 2021 - 2025</p>
-        </div>
-      </div>
-      <div className="mt-20 flex w-[100vw] flex-col items-center justify-between sm:mt-44 sm:flex-row sm:pl-52 sm:pr-52">
-        <div className="flex flex-col-reverse items-center justify-center sm:flex-col">
-          <h1 className="text-3xl sm:text-6xl">Languages</h1>
-        </div>
-        <div className="mt-10 flex flex-row justify-center sm:mt-0">
-          <Image
-            src="/static/logos/python.svg"
-            alt="python"
-            width={40}
-            height={40}
-          />
-          <Image
-            src="/static/logos/javascript.svg"
-            alt="javascript"
-            width={40}
-            height={40}
-          />
-          <Image
-            src="/static/logos/typescript.svg"
-            alt="typescript"
-            width={40}
-            height={40}
-          />
-
-          <UilHtml5 size="40" />
-          <UilHtml3 size="40" />
-          <Image src="/static/logos/c.svg" alt="c" width={40} height={40} />
-        </div>
-      </div>
-      <div className="mt-20 flex w-[100vw] flex-col items-center justify-between sm:mt-44 sm:flex-row sm:pl-52 sm:pr-52">
-        <div className="flex flex-col-reverse items-center justify-center sm:flex-col">
-          <h1 className="text-3xl sm:text-6xl">Technologies</h1>
-        </div>
-        <div className="mt-10 flex flex-row justify-center sm:mt-0">
-          <UilReact size="40" />
-          <Image
-            src="/static/logos/django.svg"
-            alt="django"
-            width={40}
-            height={40}
-          />
-          <Image
-            src="/static/logos/node.svg"
-            alt="node"
-            width={40}
-            height={40}
-          />
-          <Image
-            src="/static/logos/figma.svg"
-            alt="figma"
-            width={40}
-            height={40}
-          />
-          <Image src="/static/logos/git.svg" alt="git" width={40} height={40} />
-          <Image
-            src="/static/logos/tailwind-css.svg"
-            alt="tailwind css"
-            width={40}
-            height={40}
-          />
-          <Image
-            src="/static/logos/sql-file.svg"
-            alt="sql"
-            width={40}
-            height={40}
-          />
+        <div className="-mt-16 flex flex-col justify-center text-center sm:mt-0 sm:w-1/2 sm:text-right">
+          <p className="sm:text-l text-l mt-4">
+            I am currently a student at the University of the Philippines
+            Diliman taking up a degree in Computer Science. I am a full stack
+            web developer. However, I am also interested in mobile development,
+            game development, machine learning and more. I am proficient in
+            HTML, CSS, Javascript, React, Node.js, NextJS, SQL, and more. I am
+            also familiar with Python, C++, and Java. I am also familiar with
+            tools such as Git and Figma. I have a passion for learning and I am
+            always eager to learn new things.
+          </p>
+          <Link href="/about-me">
+            <p className="mt-4 text-2xl">See More</p>
+          </Link>
         </div>
       </div>
     </div>
