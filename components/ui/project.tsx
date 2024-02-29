@@ -46,7 +46,28 @@ export function Project({
             alt="thumbnail"
           />
         </CardItem>
-        <div className="mt-20 flex items-center justify-end">
+        <div className="mt-20 flex items-center justify-between">
+          <CardItem
+            translateZ={20}
+            translateX={-40}
+            className="flex flex-col text-white"
+          >
+            The stack:
+            <div className="flex flex-row">
+              <Image
+                src="/static/logos/nextjs.svg"
+                height="30"
+                width="30"
+                alt="nextjs"
+              />
+              <Image
+                src="/static/logos/supabase.webp"
+                height="30"
+                width="30"
+                alt="supabase"
+              />
+            </div>
+          </CardItem>
           <CardItem
             translateZ={20}
             translateX={40}
