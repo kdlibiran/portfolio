@@ -17,7 +17,7 @@ export default function ContactPage() {
       className="center top-0 flex h-[100vh] flex-1 snap-center justify-center overflow-hidden bg-stone-200 pt-[72px] align-middle"
     >
       <div className="flex flex-col justify-center">
-        <div className="flex h-[80vh] w-[90vw] flex-col justify-center bg-white shadow-lg sm:h-[calc(100vh-222px)] sm:w-[calc(100vw-500px)]">
+        <div className="flex h-[80vh] w-[90vw] flex-col justify-center bg-white shadow-lg md:h-[calc(100vh-222px)] md:w-[calc(100vw-500px)]">
           {!sent && (
             <div>
               <h1 className="mt-10 w-full text-center text-6xl font-bold">
