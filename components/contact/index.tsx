@@ -66,9 +66,10 @@ export default function ContactPage() {
             </div>
           )}
           {sent && (
-            <h1 className="w-full text-center text-6xl font-bold">
-              Thank you for reaching out! Will reply as soon as possible.
-            </h1>
+            <div className="w-full text-center text-2xl font-bold">
+              <h1>Thank you for reaching out!</h1>
+              <h1>Will reply as soon as possible.</h1>
+            </div>
           )}
         </div>
       </div>

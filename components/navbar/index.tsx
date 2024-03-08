@@ -1,6 +1,22 @@
+"use client";
 import { motion } from "framer-motion";
+import gsap from "gsap";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 
 export default function Navbar() {
+  gsap.registerPlugin(ScrollToPlugin);
+  const goToHome = () => {
+    gsap.to(window, { duration: 1, scrollTo: "#home" });
+  };
+  const goToAbout = () => {
+    gsap.to(window, { duration: 1, scrollTo: "#about-me" });
+  };
+  const goToProjects = () => {
+    gsap.to(window, { duration: 1, scrollTo: "#projects" });
+  };
+  const goToContact = () => {
+    gsap.to(window, { duration: 1, scrollTo: "#contact" });
+  };
   return (
     <motion.div
       initial={{ y: "-100%" }}
@@ -14,9 +30,10 @@ export default function Navbar() {
       >
         <p className="text-l">Kyle Libiran</p>
         <div className="hidden space-x-5 md:flex">
-          <button id="#aboutbtn">About</button>
-          <button>Projects</button>
-          <button>Contact</button>
+          <button onClick={goToHome}>Home</button>
+          <button onClick={goToAbout}>About</button>
+          <button onClick={goToProjects}>Projects</button>
+          <button onClick={goToContact}>Contact</button>
         </div>
       </nav>
     </motion.div>
