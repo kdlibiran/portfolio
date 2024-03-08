@@ -50,7 +50,7 @@ export function Project({
           <CardItem
             translateZ={20}
             translateX={-40}
-            className="flex flex-col text-white"
+            className="flex flex-col text-black"
           >
             The stack:
             <div className="flex flex-row">

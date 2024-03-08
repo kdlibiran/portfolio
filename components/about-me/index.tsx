@@ -3,8 +3,6 @@ import gsap from "gsap";
 import { useRef, useLayoutEffect } from "react";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import Image from "next/image";
-import { UilHtml3, UilHtml5, UilReact } from "@iconscout/react-unicons";
-import Link from "next/link";
 
 export default function AboutMePage() {
   const firstTitleRef = useRef(null);
@@ -78,13 +76,14 @@ export default function AboutMePage() {
             tools such as Git and Figma. I have a passion for learning and I am
             always eager to learn new things.
           </p>
-          <Link href="/about-me" className="flex flex-row justify-end">
-            <div className="group w-[120px] transition duration-300 ease-in-out">
-              <span className="mt-4 bg-gradient-to-r from-black to-black bg-[length:0%_2px] bg-left-bottom bg-no-repeat text-2xl transition-all duration-500 ease-out group-hover:bg-[length:100%_2px]">
-                See more
-              </span>
-            </div>
-          </Link>
+
+          {/*<Link href="/about - me" className="flex flex-row justify-end">
+          <div className="group w-[120px] transition duration-300 ease-in-out">
+            <span className="mt-4 bg-gradient-to-r from-black to-black bg-[length:0%_2px] bg-left-bottom bg-no-repeat text-2xl transition-all duration-500 ease-out group-hover:bg-[length:100%_2px]">
+              See more
+            </span>
+          </div>
+        </Link>*/}
         </div>
       </div>
     </div>
