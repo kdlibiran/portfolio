@@ -15,8 +15,8 @@ export default function ProjectsPage() {
     >
       <div className="flex w-[100vw] flex-initial flex-col items-center sm:mt-10">
         <h1 className="text-4xl sm:text-6xl">Projects</h1>
-        <div className="-mt-10 flex flex-1 flex-col justify-center px-10 sm:flex-row sm:gap-x-10 sm:px-0">
-          <Carousel className="max-w-screen-md">
+        <div className="px-30 -mt-10 flex flex-1 flex-col justify-center sm:flex-row sm:gap-x-10 sm:px-0">
+          <Carousel className="w-[90vw] sm:w-auto sm:max-w-screen-sm">
             <CarouselContent>
               <CarouselItem>
                 <Project
@@ -43,8 +43,8 @@ export default function ProjectsPage() {
                 />
               </CarouselItem>
             </CarouselContent>
-            <CarouselPrevious className="bg-black text-white" />
-            <CarouselNext className="bg-black text-white" />
+            <CarouselPrevious className="hidden bg-black text-white sm:flex" />
+            <CarouselNext className="hidden bg-black text-white sm:flex" />
           </Carousel>
         </div>
       </div>
