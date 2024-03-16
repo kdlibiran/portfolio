@@ -3,7 +3,13 @@ import gsap from "gsap";
 import { useRef, useLayoutEffect } from "react";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import Image from "next/image";
-
+import {
+  Dialog,
+  DialogTrigger,
+  DialogContent,
+  DialogTitle,
+} from "../ui/dialog";
+import Link from "next/link";
 export default function AboutMePage() {
   const firstTitleRef = useRef(null);
   const secondTitleRef = useRef(null);
@@ -56,7 +62,7 @@ export default function AboutMePage() {
           </p>
         </div>
       </div>
-      <div className="flex w-[90vw] flex-initial flex-col sm:mt-10 sm:flex-row sm:justify-end">
+      <div className="mb:10 flex w-[90vw] flex-initial flex-col sm:mt-10 sm:flex-row sm:justify-end">
         <div className="flex flex-row justify-center sm:w-1/2">
           <Image
             src="/static/images/logo1.png"
@@ -77,13 +83,73 @@ export default function AboutMePage() {
             always eager to learn new things.
           </p>
 
-          {/*<Link href="/about - me" className="flex flex-row justify-end">
-          <div className="group w-[120px] transition duration-300 ease-in-out">
-            <span className="mt-4 bg-gradient-to-r from-black to-black bg-[length:0%_2px] bg-left-bottom bg-no-repeat text-2xl transition-all duration-500 ease-out group-hover:bg-[length:100%_2px]">
-              See more
-            </span>
-          </div>
-        </Link>*/}
+          <Dialog>
+            <DialogTrigger className="flex flex-row justify-end">
+              <div className="group w-[120px] text-blue-600 transition duration-300 ease-in-out">
+                <span className="bg-gradient-to-r from-blue-600 to-blue-600 bg-[length:0%_2px] bg-left-bottom bg-no-repeat text-2xl transition-all duration-500 ease-out group-hover:bg-[length:100%_2px]">
+                  Skills
+                </span>
+              </div>
+            </DialogTrigger>
+            <DialogContent className="w-2/3 rounded-lg bg-stone-200">
+              <DialogTitle className="text-3xl">Skills</DialogTitle>
+              <div className="grid gap-x-2 gap-y-3 sm:grid-cols-3">
+                <div className="text-center text-xl">
+                  <p>Languages</p>
+                  <div className="font-bold">
+                    <p>C</p>
+                    <p>C++</p>
+                    <p>Python</p>
+                    <p>JavaScript</p>
+                    <p>TypeScript</p>
+                  </div>
+                </div>
+                <div className="text-center text-xl">
+                  <p>Web Development</p>
+                  <div className="font-bold">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>React</p>
+                    <p>Next.js</p>
+                    <p>Node.js</p>
+                    <p>Django</p>
+                    <p>Flask</p>
+                  </div>
+                </div>
+                <div className="text-center text-xl">
+                  <p>Data Analysis</p>
+                  <div className="font-bold">
+                    <p>Pandas</p>
+                    <p>Numpy</p>
+                    <p>Matplotlib</p>
+                    <p>Seaborn</p>
+                    <p>Scikit-learn</p>
+                  </div>
+                </div>
+              </div>
+              <div className="grid grid-cols-2">
+                <div className="text-center text-xl">
+                  <p>Database</p>
+                  <div className="font-bold">
+                    <p>SQL</p>
+                    <p>SQLite</p>
+                    <p>PostgreSQL</p>
+                    <p>MongoDB</p>
+                  </div>
+                </div>
+                <div className="text-center text-xl">
+                  <p>Others</p>
+                  <div className="font-bold">
+                    <p>Git</p>
+                    <p>Figma</p>
+                    <p>PyQt</p>
+                    <p>Selenium</p>
+                    <p>Playwright</p>
+                  </div>
+                </div>
+              </div>
+            </DialogContent>
+          </Dialog>
         </div>
       </div>
     </div>
