@@ -52,7 +52,7 @@ export default function AboutMePage() {
       <div className="scroll-none hidden w-[90vw] flex-initial sm:flex sm:overflow-hidden">
         <div
           ref={slider}
-          className="z-[0] flex h-[60px] whitespace-nowrap text-6xl"
+          className="z-[0] mt-10 flex h-[60px] whitespace-nowrap text-6xl"
         >
           <p ref={firstTitleRef} className="pr-[50px]">
             About the Developer - About the Developer - About the Developer -
@@ -82,74 +82,6 @@ export default function AboutMePage() {
             tools such as Git and Figma. I have a passion for learning and I am
             always eager to learn new things.
           </p>
-
-          <Dialog>
-            <DialogTrigger className="flex flex-row justify-end">
-              <div className="group w-[120px] text-blue-600 transition duration-300 ease-in-out">
-                <span className="bg-gradient-to-r from-blue-600 to-blue-600 bg-[length:0%_2px] bg-left-bottom bg-no-repeat text-2xl transition-all duration-500 ease-out group-hover:bg-[length:100%_2px]">
-                  Skills
-                </span>
-              </div>
-            </DialogTrigger>
-            <DialogContent className="w-2/3 rounded-lg bg-stone-200">
-              <DialogTitle className="text-3xl">Skills</DialogTitle>
-              <div className="grid gap-x-2 gap-y-3 sm:grid-cols-3">
-                <div className="text-center text-xl">
-                  <p>Languages</p>
-                  <div className="font-bold">
-                    <p>C</p>
-                    <p>C++</p>
-                    <p>Python</p>
-                    <p>JavaScript</p>
-                    <p>TypeScript</p>
-                  </div>
-                </div>
-                <div className="text-center text-xl">
-                  <p>Web Development</p>
-                  <div className="font-bold">
-                    <p>HTML</p>
-                    <p>CSS</p>
-                    <p>React</p>
-                    <p>Next.js</p>
-                    <p>Node.js</p>
-                    <p>Django</p>
-                    <p>Flask</p>
-                  </div>
-                </div>
-                <div className="text-center text-xl">
-                  <p>Data Analysis</p>
-                  <div className="font-bold">
-                    <p>Pandas</p>
-                    <p>Numpy</p>
-                    <p>Matplotlib</p>
-                    <p>Seaborn</p>
-                    <p>Scikit-learn</p>
-                  </div>
-                </div>
-              </div>
-              <div className="grid grid-cols-2">
-                <div className="text-center text-xl">
-                  <p>Database</p>
-                  <div className="font-bold">
-                    <p>SQL</p>
-                    <p>SQLite</p>
-                    <p>PostgreSQL</p>
-                    <p>MongoDB</p>
-                  </div>
-                </div>
-                <div className="text-center text-xl">
-                  <p>Others</p>
-                  <div className="font-bold">
-                    <p>Git</p>
-                    <p>Figma</p>
-                    <p>PyQt</p>
-                    <p>Selenium</p>
-                    <p>Playwright</p>
-                  </div>
-                </div>
-              </div>
-            </DialogContent>
-          </Dialog>
         </div>
       </div>
     </div>
