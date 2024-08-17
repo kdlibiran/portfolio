@@ -24,7 +24,9 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <div className="no-scrollbar">
           {children}
+          </div>
         </ThemeProvider></body>
     </html>
   );

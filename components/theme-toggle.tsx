@@ -15,8 +15,8 @@ export default function ThemeToggle() {
   return (
     <Button variant="link"
       onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}>
-      <Moon className="h-24 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0 duration-100" />
-      <Sun className="absolute h-24 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100 duration-100" />
+      <Moon className="absolute h-24 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100 duration-100" />
+      <Sun className="h-24 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0 duration-100" />
     </Button>
   )
 }
