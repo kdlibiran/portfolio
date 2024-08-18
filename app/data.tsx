@@ -48,7 +48,7 @@ export const DATA = {
   ],
   education: [
     {
-      school: "University of the Philippines - Diliman",
+      school: "UP Diliman",
       href: "https://upd.edu.ph",
       degree: "Bachelor of Science in Computer Science (BSCS)",
       logoUrl: "/up.png",

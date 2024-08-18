@@ -17,7 +17,7 @@ export default function Background() {
       className="flex justify-center w-full h-screen items-center"
       ref={background}
     >
-      <div className="flex flex-col w-1/2 justify-center gap-14">
+      <div className="flex flex-col w-full sm:w-1/2 justify-center gap-14 sm:px-0 px-5">
         <section id="work" className="flex flex-col w-full justify-center">
           <div className="flex min-h-0 flex-col gap-y-6 w-full">
             <h2 className="text-xl font-bold text-center">Work Experience</h2>

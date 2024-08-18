@@ -47,7 +47,7 @@ export const ResumeCard = ({
     >
       <Card className="flex flex-col p-4">
         <div className="flex items-center">
-          <Avatar className="border size-12 mr-4 bg-muted-background dark:bg-foreground">
+          <Avatar className="border size-12 ml-4 bg-muted-background dark:bg-foreground">
             <AvatarImage src={logoUrl} alt={altText} className="object-contain" />
             <AvatarFallback>{altText[0]}</AvatarFallback>
           </Avatar>
@@ -75,8 +75,12 @@ export const ResumeCard = ({
                       isExpanded ? "rotate-90" : "rotate-0",
                     )}
                   />
-                </h3>
 
+
+                </h3>
+                <div className="text-xs sm:text-sm tabular-nums text-muted-foreground text-right">
+                  {period}
+                </div>
               </div>
               {subtitle && (
                 <div className="font-sans text-xs text-muted-foreground">
@@ -85,12 +89,9 @@ export const ResumeCard = ({
               )}
             </CardHeader>
           </div>
-          <div className="text-xs sm:text-sm tabular-nums text-muted-foreground text-right">
-            {period}
-          </div>
         </div>
         {isExpanded && description && (
-          <div className="pb-4">
+          <div className="pb-4 -mt-4">
           <motion.div
             initial={{ opacity: 0, height: 0 }}
             animate={{
