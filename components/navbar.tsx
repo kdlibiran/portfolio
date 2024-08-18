@@ -2,7 +2,7 @@
 
 import { Dock, DockIcon } from "@/components/magicui/dock";
 import { Separator } from "@/components/ui/separator";
-import { House, FolderKanban,  UserRound} from "lucide-react";
+import { House, FolderKanban, UserRound,  Wrench, NotebookText} from "lucide-react";
 import ThemeToggle from "./theme-toggle";
 import { Tooltip, TooltipContent, TooltipTrigger, TooltipProvider } from "./ui/tooltip";
 import {useContext} from 'react';
@@ -15,7 +15,7 @@ export default function Navbar() {
     return null;
   }
 
-  const { home, about } = scrollContext;
+  const { home, about,skills,background,projects } = scrollContext;
 
   const scrollToTarget = (targetRef: React.RefObject<HTMLElement>) => {
     if (targetRef.current) {
@@ -48,13 +48,35 @@ export default function Navbar() {
               </Tooltip>
             </span>
           </DockIcon>
+            <DockIcon>
+              <span onClick = {() => scrollToTarget(skills)} className="mt-[0.4rem]">
+                <Tooltip>
+                  <TooltipTrigger>
+                    <Wrench size={24} />
+                  </TooltipTrigger>
+                  <TooltipContent className="mb-4">Skills</TooltipContent>
+                </Tooltip>
+              </span>
+            </DockIcon>
+            <DockIcon>
+              <span onClick = {() => scrollToTarget(background)} className="mt-[0.4rem]">
+                <Tooltip>
+                  <TooltipTrigger>
+                    <NotebookText size={24} />
+                  </TooltipTrigger>
+                  <TooltipContent className="mb-4">Background</TooltipContent>
+                </Tooltip>
+              </span>
+            </DockIcon>
           <DockIcon>
-            <Tooltip>
-              <TooltipTrigger>
-                <FolderKanban size={24} />
-              </TooltipTrigger>
-              <TooltipContent className="mb-4">Projects</TooltipContent>
-            </Tooltip>
+            <span onClick = {() => scrollToTarget(projects)} className="mt-[0.4rem]">
+              <Tooltip>
+                <TooltipTrigger>
+                  <FolderKanban size={24} />
+                </TooltipTrigger>
+                <TooltipContent className="mb-4">Projects</TooltipContent>
+              </Tooltip>
+            </span>
           </DockIcon>
           <Separator orientation="vertical" className="h-full py-2" />
           <DockIcon>

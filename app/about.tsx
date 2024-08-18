@@ -2,7 +2,7 @@
 
 import { useContext } from "react";
 import { ScrollContext } from "@/components/scroll-provider";
-
+import { DATA } from "./data";
 export default function About() {
   const scrollContext = useContext(ScrollContext);
   if (!scrollContext) {
@@ -12,10 +12,13 @@ export default function About() {
 
   return (
       <div className="w-full h-screen flex justify-center items-center" ref={about}>
-        <div className="w-1/2 border p-8 rounded-3xl">
-          <h1 className="text-4xl font-bold">About Me</h1>
-          <p className="text-lg mt-4">I am a full stack developer with a passion for creating beautiful and functional websites. I have experience with a variety of technologies including React, Next.js, Angular, Django, Flask, Postgresql, and more. I am always looking to learn new things and improve my skills. I am currently looking for new opportunities to work on exciting projects with a great team.</p>
-        </div>
+        <div className="w-[60%] border p-8 rounded-3xl flex place-items-center gap-8">
+          <img src={DATA.image} className="h-[100%] w-[100%] rounded-full sm:flex hidden" />
+          <div className="flex flex-col">
+            <h1 className="text-4xl font-bold pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text leading-none text-transparent dark:from-white dark:to-slate-900/10">About Me</h1>
+          <p className="text-lg mt-4 font-sans text-muted-foreground">{DATA.description}</p>
+          </div>
+          </div>
       </div>
   );
 }
