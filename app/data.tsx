@@ -38,6 +38,30 @@ export const DATA = {
       href: "https://enstack.com",
       badges: [],
       location: "Taguig, PH",
+      title: "Engineering Consultant",
+      logoUrl: "/enstack.png",
+      start: "Sep 2024",
+      end: "Present",
+      description:
+        "I am currently working as a full stack developer at Enstack Technologies. I am responsible for developing new features and maintaining the existing ones for the company's mobile app.",
+    },
+    {
+      company: "Old St. Labs",
+      href: "https://old.st",
+      badges: [],
+      location: "Remote",
+      title: "Software Engineer Intern",
+      logoUrl: "/oldst.jpg",
+      start: "Sep 2024",
+      end: "Oct 2024",
+      description:
+        "At Old St. Labs, We developed an AI-powered chatbot web app to improve the time tracking of the employees of the company. I was responsible for developing backend services using NestJS and also integrating it with OpenAI's API.",
+    },
+    {
+      company: "Enstack",
+      href: "https://enstack.com",
+      badges: [],
+      location: "Taguig, PH",
       title: "Engineering Intern",
       logoUrl: "/enstack.png",
       start: "Jun 2024",
@@ -61,19 +85,88 @@ export const DATA = {
   skills:[
     {
       title: "Languages",
-      items: ["JavaScript", "TypeScript", "Python", "C", "C++", "PHP"],
+      items: [{
+        name: "Python"
+      }
+      , {
+        name: "JavaScript"
+      }
+      , {
+        name: "TypeScript"
+      }
+      , {
+        name: "HTML"
+      }
+      , {
+        name: "CSS"
+      }
+      , {
+        name: "C++"
+      }
+      , {
+        name: "C"
+      }
+      , {
+        name: "SQL"
+      }
+      ]
     },
     {
       title: "Frameworks",
-      items: ["React", "Nextjs", "Angular", "Django", "Flask", "Tailwind CSS"],
+      items: [
+        {
+          name: "React"
+        }
+        , {
+          name: "Angular"
+        }
+        , {
+          name: "Django"
+        }
+        , {
+          name: "Flask"
+        }
+        , {
+          name: "Next.js"
+        }
+        , {
+          name: "Node.js"
+        }
+        , {
+          name: "NestJS"
+        }
+      ],
     },
     {
       title: "Database",
-      items: ["MySQL", "PostgreSQL", "SQLite", "MongoDB"],
+      items: [
+        {
+          name: "PostgreSQL"
+        }
+        , {
+          name: "MySQL"
+        }
+        , {
+          name: "SQLite"
+        }
+        , {
+          name: "DynamoDB"
+        }
+      ],
     },
     {
       title: "Others",
-      items: ["Git", "Postman", "AWS", "Figma", "Selenium", "Playwright"],
+      items: [
+        {
+          name: "AWS"
+        }
+        , {
+          name: "Git"
+        }
+        , {
+          name: "GitHub"
+        }
+      ],
     },
   ]
 } as const;

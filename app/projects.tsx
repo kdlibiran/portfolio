@@ -13,7 +13,7 @@ export default function Projects() {
   return (
       <div className="w-full h-screen flex justify-center items-center" ref={projects}>
         <h1 className="text-4xl font-bold pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text leading-none text-transparent dark:from-white dark:to-slate-900/10">Projects</h1>
-        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black to-gray-300/80 bg-clip-text leading-none text-transparent dark:from-white dark:to-slate-900/10" />
+        {/* TODO: Add projects here */}
       </div>
   );
 }
